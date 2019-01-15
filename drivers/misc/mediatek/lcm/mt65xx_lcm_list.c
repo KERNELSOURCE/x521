@@ -33,11 +33,16 @@ LCM_DSI_MODE_CON lcm_dsi_mode;
 #define LCD_DEBUG(fmt, args...)  pr_debug("[KERNEL/LCM]"fmt, ##args)
 #endif
 
+extern LCM_DRIVER ili9881c_hd720_boe5p2_dj_5080_lcm_drv;
 extern LCM_DRIVER ili9881c_hd720_dsi_vdo_lcm_drv;
 extern LCM_DRIVER ili9881c_hd720_dsi_vdo_cmi_lcm_drv;
 extern LCM_DRIVER hx8394f_hd720_dsi_vdo_cpt_lcm_drv;
 extern LCM_DRIVER ili9881c_hd720_dsi_vdo_auo5c_lcm_drv;
 LCM_DRIVER *lcm_driver_list[] = {
+	#if defined(ILI9881C_HD720_BOE5P2_DJ_5080)
+	&ili9881c_hd720_boe5p2_dj_5080_lcm_drv,
+#endif
+
 #if defined(ILI9881C_HD720_DSI_VDO)
 	&ili9881c_hd720_dsi_vdo_lcm_drv,
 #endif
