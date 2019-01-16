@@ -1,7 +1,7 @@
 
 /dts-v1/;
 
-#include "mt6735.dtsi"
+#include "mt6753.dtsi"
 
 / {
 	cpus {	#address-cells = <1>;
