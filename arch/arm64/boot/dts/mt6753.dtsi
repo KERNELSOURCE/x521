@@ -1,5 +1,5 @@
 /*
- * Mediatek's MT6735 SoC device tree source
+ * Mediatek's MT6753 SoC device tree source
  *
  * Copyright (c) 2013 MediaTek Co., Ltd.
  *              http://www.mediatek.com
@@ -12,7 +12,7 @@
 #include "mt6735-pinfunc.h"
 #include <dt-bindings/mmc/mt67xx-msdc.h>
 / {
-	model = "MT6735";
+	model = "MT6753";
 	compatible = "mediatek,MT6735";
 	interrupt-parent = <&gic>;
 	#address-cells = <2>;
